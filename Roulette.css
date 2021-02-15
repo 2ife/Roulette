@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  width: 1000px;
+  height: 600px;
+  margin: 0px 5px;
+  border: 5px black solid;
+}
+h1 {
+  margin: 10px 0px 0px 0px;
+  padding-bottom: 10px;
+  border-bottom: 5px black solid;
+  height: 42px;
+  font-weight: bold;
+}
+.deposit {
+  margin: 3px 0px;
+}
+table,
+tr,
+th,
+td {
+  border: 2px black solid;
+}
+#hideDisplay {
+  display: none;
+}
+#deposit,
+#depositMoney,
+#resultMoney {
+  height: 16px;
+}
+.grid1 {
+  border-top: 5px black solid;
+  width: 1000px;
+  height: 503px;
+  display: grid;
+  grid-template-rows: 249px 254px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 330px 340px 330px;
+  border-bottom: 5px black solid;
+}
+.gridInside1,
+.gridInside3,
+.drawLine1 {
+  display: grid;
+  grid-auto-rows: 30px 159px 30px 30px;
+}
+.gridInside1 tr,
+.gridInside3 tr,
+.drawLine1 tr {
+  height: 73px;
+}
+.drawLine1 {
+  border-left: 5px black solid;
+  border-right: 5px black solid;
+}
+.gridInside2 {
+  display: grid;
+  grid-auto-rows: 30px 79px 80px 30px 30px;
+}
+.gridInside2 tr {
+  height: 34px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: 330px 670px;
+}
+.drawLine2 {
+  border-left: 5px black solid;
+  display: grid;
+  grid-template-rows: 30px 120px 30px 30px 39px;
+}
+.drawLine2 img {
+  width: 100px;
+  height: 100px;
+}
+#regame,
+#payBack {
+  width: 100px;
+  height: 30px;
+}

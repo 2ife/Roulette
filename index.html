@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Roulette.css" />
+    <script src="Roulette.js"></script>
+    <title>Gamble Roulette</title>
+  </head>
+  <body>
+    <h1>Gamble Roulette</h1>
+    <div class="deposit">
+      <input id="deposit" type="text" value="0" />
+      &#8361;
+      <input type="button" value="입금" onclick="deposit()" />
+    </div>
+    <div class="grid1">
+      <div class="grid2">
+        <div class="gridInside1">
+          <div>
+            <input
+              type="button"
+              value="Roulette_4"
+              onclick="chooseRouletteType('.gridInside1')"
+            />
+          </div>
+          <table id="table1">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보상</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*1">*1</td>
+                <td class="*2">*2</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="hideDisplay">
+            <input
+              id="extractNumber1"
+              type="button"
+              value="번호 추출"
+              onclick="extractNumber(1)"
+            />
+            <input id="extractedNumber1" type="text" value="" onlyread />
+          </div>
+          <div id="hideDisplay">
+            결과: <input id="result1" type="text" value="" onlyread />
+          </div>
+        </div>
+        <div class="drawLine1">
+          <div>
+            <input
+              type="button"
+              value="Roulette_8"
+              onclick="chooseRouletteType('.drawLine1')"
+            />
+          </div>
+          <table id="table2">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보상</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*1">*1</td>
+                <td class="*1.5">*1.5</td>
+                <td class="*1.5">*1.5</td>
+                <td class="*2">*2</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="hideDisplay">
+            <input
+              id="extractNumber2"
+              type="button"
+              value="번호 추출"
+              onclick="extractNumber(2)"
+            />
+            <input id="extractedNumber2" type="text" value="" onlyread />
+          </div>
+          <div id="hideDisplay">
+            결과: <input id="result2" type="text" value="" onlyread />
+          </div>
+        </div>
+        <div class="gridInside2">
+          <div>
+            <input
+              type="button"
+              value="Roulette_16"
+              onclick="chooseRouletteType('.gridInside2')"
+            />
+          </div>
+          <table id="table3_1">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보상</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*0.5">*0.5</td>
+              </tr>
+            </tbody>
+          </table>
+          <table id="table3_2">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보상</td>
+                <td class="*0.5">*0.5</td>
+                <td class="*1">*1</td>
+                <td class="*1">*1</td>
+                <td class="*1">*1</td>
+                <td class="*1">*1</td>
+                <td class="*1.5">*1.5</td>
+                <td class="*1.5">*1.5</td>
+                <td class="*2">*2</td>
+                <td class="*3">*3</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="hideDisplay">
+            <input
+              id="extractNumber3"
+              type="button"
+              value="번호 추출"
+              onclick="extractNumber(3)"
+            />
+            <input id="extractedNumber3" type="text" value="" onlyread />
+          </div>
+          <div id="hideDisplay">
+            결과: <input id="result3" type="text" value="" onlyread />
+          </div>
+        </div>
+      </div>
+      <div class="grid3">
+        <div class="gridInside3">
+          <div>
+            <input
+              type="button"
+              value="Roulette_bonus"
+              onclick="chooseRouletteType('.gridInside3')"
+            />
+          </div>
+          <table id="table4">
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>1</th>
+                <th>2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>보상</td>
+                <td class="*0">*0</td>
+                <td class="*2">*2</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="hideDisplay">
+            <input
+              id="extractNumber4"
+              type="button"
+              value="번호 추출"
+              onclick="extractNumber(4)"
+            />
+            <input id="extractedNumber4" type="text" value="" onlyread />
+          </div>
+          <div id="hideDisplay">
+            결과: <input id="result4" type="text" value="" onlyread />
+          </div>
+        </div>
+        <div class="drawLine2">
+          <div>
+            <input id="depositMoney" type="text" value="0" />
+            &#8361;
+          </div>
+          <div><img src="arrow.png" alt="" /></div>
+          <div>
+            <input id="resultMoney" type="text" value="0" />
+            &#8361;
+          </div>
+          <div>
+            (수익률:
+            <input id="earningsRate" type="text" name="" value="0" readonly />
+            %)
+          </div>
+          <div>
+            <input
+              id="regame"
+              type="button"
+              value="한 판 더!"
+              onclick="regame()"
+            />
+            <input
+              id="payBack"
+              type="button"
+              value="상환"
+              onclick="payBack()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
